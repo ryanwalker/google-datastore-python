@@ -1,5 +1,7 @@
 # google-datastore-python
 
+### [Python SDK Documentation](https://googlecloudplatform.github.io/google-cloud-python/stable/datastore-usage.html)
+
 ### Install Google Cloud SDK
 `brew cask install google-cloud-sdk`
 
