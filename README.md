@@ -4,9 +4,11 @@
 `brew cask install google-cloud-sdk`
 
 ### Add cli to path, along with autocomplete
-`which gcloud`
-`#/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/gcloud`
-`/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/./install.sh`
+```
+which gcloud
+#/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/gcloud
+/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/./install.sh
+```
 
 ### Grant Permissions
 `gcloud auth application-default login`
