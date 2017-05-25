@@ -5,20 +5,14 @@ client = datastore.Client()
 query = client.query(kind='Card')
 it = query.fetch()
 
-count = 0
+query = client.query(kind='Card'
+# query.add_filter('appName',  '=', 'mobpay1')
 
-# Loop over every Card entity, stopping at last number divisible by 100
-for card in it:
-    print(card['appName'])
-    count += 1
-    if count == 10:
-        break
+query.fetch(1)
 
-# # Any remaining entities more than a number divisible by 100
-# # (e.g. the last 26 of 926 total)
-# if len(entitiesToSave) > 0:
-#     # client.put_multi(entitiesToSave)
-#     print('Saved the final cards: ')
-#     print(len(entitiesToSave))
-#
-# print("Saved total: " + str(count))
+for card in query.fetch(limit=1):
+  print card['actualWaitTimeMinutes']
+  print card
+
+
+print query.project
