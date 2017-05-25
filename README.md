@@ -16,11 +16,13 @@
 
 
 ### Some commands you can run
-`gcloud projects list`
+```
+gcloud projects list
 
-`gcloud config set project <your-project-id>`
-`gcloud config set compute/zone us-central1-a`
+gcloud config set project <your_project_id>
+gcloud config set compute/zone us-central1-a
 
-`gcloud config configurations create NAME_OF_CONFIG`
-`gcloud config configurations list`
-`gcloud config configurations activate NAME_OF_CONFIG`
+gcloud config configurations create <name_of_config>
+gcloud config configurations list
+gcloud config configurations activate <name_of_config>
+```
